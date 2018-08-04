@@ -6,15 +6,16 @@
             $scope.flag = false;
             $scope.products = [];
             //Занесения данных из local storage
-            /*var productsLength = $scope.products.length;
-            var storageElems = JSON.parse(localStorage.getItem("object"));
-            for (let i = 0; i < storageElems.length; i++) {
-                console.log(storageElems[i].name);
-                $scope.products.push({
-                    name: storageElems[i].name,
-                    comments: storageElems[i].comments
-                });
-            }; */
+
+            var storageElems = JSON.parse(localStorage.getItem("object"));            
+            if (storageElems !== null) {
+                for (let i = 0; i < storageElems.length; i++) {                   
+                    $scope.products.push({
+                        name: storageElems[i].name,
+                        comments: storageElems[i].comments
+                    });
+                };
+            }
 
             $scope.addItem = function () {
                 $scope.errortext = "";
