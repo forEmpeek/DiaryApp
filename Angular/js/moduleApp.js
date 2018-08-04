@@ -6,7 +6,7 @@
             $scope.flag = false;
             $scope.products = [];
             //Занесения данных из local storage
-            var productsLength = $scope.products.length;
+            /*var productsLength = $scope.products.length;
             var storageElems = JSON.parse(localStorage.getItem("object"));
             for (let i = 0; i < storageElems.length; i++) {
                 console.log(storageElems[i].name);
@@ -14,7 +14,7 @@
                     name: storageElems[i].name,
                     comments: storageElems[i].comments
                 });
-            };
+            }; */
 
             $scope.addItem = function () {
                 $scope.errortext = "";
