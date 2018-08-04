@@ -1,0 +1,13 @@
+.border{
+    border-left-color:#0c0a0a solid 1px;   
+    box-shadow: 0 0 10px rgba(0,0,0,1);
+    font-weight: 10px;
+}
+
+#noteList:hover{
+    border-left:2px solid red;
+}
+
+.text{
+    color:#E6E9ED
+}
